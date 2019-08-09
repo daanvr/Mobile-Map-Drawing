@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.test {
+    border: solid 1px black;
+    padding: 10px;
+    /* margin: 10px; */
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+#map canvas {
+    cursor: crosshair;
+}
+
+#nextDataInfo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20vw;
+    /* float: left; */
+    /* height: ; */
+    background-color: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 2px;
+}
+
+#downloadButtonContainer {
+    text-align: center;
+    /* font-size: 2em; */
+    /* color: black; */
+    /* text-decoration: none; */
+    position: absolute;
+    bottom: 10px;
+    right: 40vw;
+    /* width: 20vw; */
+    padding: 10px 30px;
+    background-color: rgba(255, 255, 255, 1);
+    border: solid black 1px;
+    border-radius: 5px;
+}
+
+#download {
+    color: black;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+#previous, #next {
+    height: 1.6em;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(238, 238, 238);
+    font-size: 0.8em;
+}
+
+#previous {
+    /* display: inline-block; */
+    float: left;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#next {
+    /* display: inline-block; */
+    float: right;
+    /* background-color: rebeccapurple; */
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#toBeEnrichedDataDisplay {
+    text-align: center;
+    font-size: 2em;
+    position: absolute;
+    /* top: 10px; */
+    /* right: 35vw; */
+    width: 430px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 10px;
+}
+
+#centerContainer {
+    position: absolute;
+    top: 10px;
+    right: calc((100vw - 430px) / 2);
+    width: 430px;
+}
+
+#saveMarker {
+    top: 2em;
+    position: absolute;
+    top: 2.6em;
+    border: none;
+    width: 150px;
+    left: calc((100% - 150px)/2);
+}
+
+#saveMarkerButton {
+    border: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #57ad49;
+    color: white;
+    font-size: 16px;
+    padding: 5px 10px;
+}

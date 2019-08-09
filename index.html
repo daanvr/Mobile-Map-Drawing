@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <!-- Mapbox -->
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+
+    <!-- Turf from mapbox -->
+    <script src='https://api.mapbox.com/mapbox.js/plugins/turf/v3.0.11/turf.min.js'></script>
+
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="index.css"> 
+    
+    <!-- Font? -->
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'
+        integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+</head>
+
+<body>
+    <div class="" id="map"></div>
+
+
+
+
+
+
+
+
+
+    <!-- <div id="centerContainer"> -->
+        <!-- <div id="toBeEnrichedDataDisplay">
+            <button id="previous" onclick="positionInJson(false, true)" disabled="true">
+                <i class="fa fa-angle-left" style="font-size:26px"></i>
+            </button>
+            <span id="toBeEnrichedDataDisplayText"></span>
+            <button id="next" onclick="positionInJson(true)" disabled="true">
+                <i class="fa fa-angle-right" style="font-size:26px"></i>
+            </button>
+        </div> -->
+        <!-- <div id="saveMarker" style="display: none;">
+            <button id="saveMarkerButton" onclick="saveMarkerPositionAsCurrentCityPosition()">
+                Save city position
+            </button>
+        </div> -->
+    <!-- </div> -->
+    <!-- <div id="downloadButtonContainer" style="display:none;">
+        <a href="" class="button" id="download" download="Created_Locations.geojson">
+            <b>download .geojson file</b>
+        </a>
+    </div> -->
+
+    <!-- <div class="test" id="nextDataInfo">
+        <div id="uploadButtonContainer">
+            <p>First upload the .json file.</p>
+            <input class="button" type="file" name="File Upload" id="uploadedFileButton" />
+        </div>
+        <p id="geojsonCounter"></p>
+
+        <button id="saveMarker" onclick="saveMarkerPositionAsCurrentCityPosition()" style="display: none;"> Save city
+            position </button>
+    </div> -->
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
