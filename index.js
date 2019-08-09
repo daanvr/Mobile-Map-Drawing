@@ -129,5 +129,5 @@ function addMouseCoordToDrawing(e) {
     var geojsonFeature = turf.buffer(clickCoor, 200);
     theGeojson['features'][0] = turf.union(theGeojson['features'][0], geojsonFeature);
     map.getSource("sourceName").setData(theGeojson);
-    console.log("Add new mouse location to polygone");
+    // console.log("Add new mouse location to polygone");
 }
