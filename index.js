@@ -8,12 +8,12 @@ var statusOfAllCities = [];
 var georeferencedCities = [];
 
 //Mapbox magic
-mapboxgl.accessToken = 'pk.eyJ1IjoibWVkaXZhbHRyYWRlcm91dGVzIiwiYSI6ImNqdWphMm1xZjBtOWYzem5ianp2NHZ0dTgifQ.T7Q5YDRR4SC7bB8pIcCZhQ';
+mapboxgl.accessToken = 'pk.eyJ1IjoiZGFhbnZyIiwiYSI6ImNpdTJmczN3djAwMHEyeXBpNGVndWtuYXEifQ.GYZf7r9gTfQL3W-GpmmJ3A';
 const map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/medivaltraderoutes/cjujafmnr4jn81flairsl8pbe',
-    center: [0, 0],
-    zoom: 2.5
+    style: 'mapbox://styles/daanvr/cjz5i3bas0xxe1cqh85yp81s2',
+    center: [6.094541, 52.512292],
+    zoom: 15
 });
 
 var nav = new mapboxgl.NavigationControl();
@@ -73,7 +73,7 @@ function test() {
         'layout': {},
         'paint': {
             'fill-color': '#088',
-            'fill-opacity': 0.8
+            'fill-opacity': 0.5
         }
     });
 
@@ -126,7 +126,13 @@ function addMouseCoordToDrawing(e) {
             name: 'Null Island'
         }
     };
-    var geojsonFeature = turf.buffer(clickCoor, 200);
+    var geojsonFeature = turf.buffer(clickCoor, 0.02);
+
+    var center = [-75.343, 39.984];
+    var radius = 5;
+    var options = { steps: 10, units: 'kilometers', properties: { foo: 'bar' } };
+    // var geojsonFeature = turf.circle([-75.343, 39.984], 0.02, { steps: 10, units: 'kilometers', properties: { foo: 'bar' } });
+    
     theGeojson['features'][0] = turf.union(theGeojson['features'][0], geojsonFeature);
     map.getSource("sourceName").setData(theGeojson);
     // console.log("Add new mouse location to polygone");
